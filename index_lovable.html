@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khardiata Ba – Développeuse Frontend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6C63FF, #E67EFA);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #6C63FF;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .description {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Khardiata Ba</h1>
+    <h2>Développeuse frontend passionnée par l'expérience utilisateur</h2>
+    
+    <p class="description">
+      Je suis passionnée par tout ce qui touche au développement web, au design moderne et à l’expérience utilisateur. 
+      Mon intérêt va bien au-delà du code : l’e-commerce, la création d’interfaces élégantes, 
+      l'analyse de données et tout ce qui mêle informatique et chiffres me fascinent.  
+      Mon objectif en tant que développeuse frontend est de concevoir des expériences digitales intuitives, performantes et accessibles à tous.
+    </p>
+
+    <a href="#" class="btn">Afficher mes projets</a>
+  </main>
+</body>
+</html>
