@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Khardiata Ba - Développeuse Frontend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset basique */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7e22ce, #ec4899);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero {
+      max-width: 600px;
+      background: rgba(255 255 255 / 0.1);
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgb(156 39 176 / 0.4);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    p.subtitle {
+      font-weight: 400;
+      font-size: 1.25rem;
+      margin-bottom: 40px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.2);
+      line-height: 1.5;
+    }
+    button.cta {
+      background: white;
+      color: #7e22ce;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 12px 36px;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgb(156 39 176 / 0.6);
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 2px 3px rgb(156 39 176 / 0.5));
+    }
+    button.cta:hover {
+      background: #ec4899;
+      color: white;
+      box-shadow: 0 8px 25px rgb(236 72 153 / 0.8);
+      transform: scale(1.05);
+    }
+    /* Animation douce au chargement */
+    .hero {
+      animation: fadeInScale 0.8s ease forwards;
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    @keyframes fadeInScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" role="main" aria-label="Introduction personnelle">
+    <h1>Khardiata Ba</h1>
+    <p class="subtitle">Développeuse frontend passionnée par l'expérience utilisateur</p>
+    <button class="cta" type="button" onclick="alert('Redirection vers mes projets à venir!')">
+      Afficher mes projets
+    </button>
+  </section>
+</body>
+</html>
